@@ -10,7 +10,7 @@ export function ContactSection() {
   const [emailCopied, setEmailCopied] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
-  const email = "your.email@example.com"
+  const email = "lvquanuit@gmail.com"
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -77,11 +77,11 @@ export function ContactSection() {
                   className="flex items-center space-x-3 hover:text-primary transition-colors group"
                 >
                   <Phone className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+84 832995137</span>
                 </a>
                 <div className="flex items-center space-x-3 hover:text-primary transition-colors">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span>Your City, Country</span>
+                  <span>Tan Binh, Ho Chi Minh City, Vietnam</span>
                 </div>
               </CardContent>
             </Card>
@@ -101,10 +101,6 @@ export function ContactSection() {
                     <Linkedin className="h-4 w-4 mr-2" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline" size="sm" className="hover:scale-110 transition-transform bg-transparent">
-                    <Twitter className="h-4 w-4 mr-2" />
-                    Twitter
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -119,10 +115,9 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Currently Available For:</h4>
                   <ul className="text-muted-foreground space-y-1 text-sm">
-                    <li>• Full-stack development projects</li>
-                    <li>• Frontend consulting</li>
-                    <li>• Code reviews and mentoring</li>
-                    <li>• Open source collaborations</li>
+                    <li>• Full-time Frontend Developer (Fresher) positions</li>
+                    <li>• Backend Developer roles to expand my skill set</li>
+                    <li>• Collaborative projects using JavaScript, TypeScript, or React.js</li>
                   </ul>
                 </div>
 

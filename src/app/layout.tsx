@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio - Your Name",
+  title: "Welcome to my portfolio",
   description: "Minimal portfolio showcasing my work and experience",
   generator: "v0.app",
 }

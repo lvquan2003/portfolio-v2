@@ -7,31 +7,32 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
+  // {
+  //   title: "Task Management App",
+  //   description: "Collaborative task management application with real-time updates and team collaboration features.",
+  //   image: "/task-management-dashboard.png",
+  //   technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+  //   liveUrl: "#",
+  //   githubUrl: "#",
+  // },
   {
-    title: "E-Commerce Platform",
+    title: "Dragging Trello App",
     description:
-      "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    image: "/modern-ecommerce-interface.png",
-    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Built a lightweight Trello-inspired web application focusing on core task board interactions.",
+    image: "https://res.cloudinary.com/dsq2ux962/image/upload/v1755855345/gen-h-abcccc_rkkqrm.jpg",
+    technologies: ["ReactJS", "Material UI", "DnDKit", "Node.js", "Express"],
+    liveUrl: "https://trello-frontend-two.vercel.app",
+    githubUrl: "https://github.com/lvquan2003/trello-frontend",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates and team collaboration features.",
-    image: "/task-management-dashboard.png",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Beautiful weather application with location-based forecasts and interactive charts.",
-    image: "/weather-analytics-dashboard.png",
-    technologies: ["Vue.js", "Chart.js", "Weather API", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+    title: "Dragging Trello App",
+    description:
+      "Built a lightweight Trello-inspired web application focusing on core task board interactions.",
+    image: "https://res.cloudinary.com/dsq2ux962/image/upload/v1755855345/gen-h-abcccc_rkkqrm.jpg",
+    technologies: ["ReactJS", "Material UI", "DnDKit", "Node.js", "Express"],
+    liveUrl: "https://trello-frontend-two.vercel.app",
+    githubUrl: "https://github.com/lvquan2003/trello-frontend",
+  }
 ]
 
 const getTechColor = (tech: string) => {
@@ -49,7 +50,10 @@ const getTechColor = (tech: string) => {
     "Chart.js": "tech-devops",
     "Tailwind CSS": "tech-tailwind",
     "Weather API": "tech-devops",
-    Python: "tech-python",
+    "Material UI": "tech-material",
+    Express: "tech-express",
+    DnDKit: "tech-dnd",
+
   }
   return colors[tech] || "tech-default"
 }
@@ -99,11 +103,11 @@ export function ProjectsSection() {
               className={`opacity-0 ${visibleCards.includes(index) ? `scale-in animate-delay-${index * 200}` : ""}`}
             >
               <Card className="group hover:shadow-lg transition-all duration-300 overflow-hidden hover:scale-[1.02] h-full">
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[16/9] overflow-hidden">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardHeader>

@@ -17,19 +17,30 @@ export function IntroSection() {
   }, [])
 
   const scrollToProjects = () => {
-    const element = document.getElementById("projects")
+    // const element = document.getElementById("projects")
+    const element = document.getElementById("experience")
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
   }
 
+  // const downloadCV = () => {
+  //   // Replace with your actual CV file path
+  //   const link = document.createElement("a")
+  //   link.href = "/cv.pdf"
+  //   link.download = "Le_Van_Quan_CV.pdf"
+  //   link.click()
+  // }
+
   const downloadCV = () => {
-    // Replace with your actual CV file path
-    const link = document.createElement("a")
-    link.href = "/cv.pdf"
-    link.download = "Le_Van_Quan_CV.pdf"
-    link.click()
+    const a = document.createElement("a")
+    a.href = "/cv.pdf"
+    a.download = "Le_Van_Quan_CV.pdf"
+    document.body.appendChild(a)
+    a.click()
+    a.remove()
   }
+
 
   return (
     <section id="intro" className="min-h-screen flex items-center justify-center px-4">
@@ -68,13 +79,13 @@ export function IntroSection() {
             <p
               className={`text-lg md:text-xl text-muted-foreground opacity-0 ${isVisible ? "slide-in-left animate-delay-400" : ""}`}
             >
-              Full Stack Developer crafting digital experiences with modern technologies
+              Frontend Developer building modern, responsive interfaces with JavaScript, TypeScript, and React.js.
             </p>
 
             <div
               className={`text-base text-muted-foreground opacity-0 ${isVisible ? "slide-in-right animate-delay-600" : ""}`}
             >
-              Passionate about creating beautiful, functional, and user-centered digital experiences
+              Passionate about delivering user-friendly digital experiences and adapting to cutting-edge technologies.
             </div>
 
             <div
@@ -111,9 +122,9 @@ export function IntroSection() {
                 <a href="https://github.com/lvquan2003"><Linkedin className="h-5 w-5" /></a>
                 
               </Button>
-              <Button variant="ghost" size="sm" className="p-2 hover:scale-110 transition-transform">
+              {/* <Button variant="ghost" size="sm" className="p-2 hover:scale-110 transition-transform">
                 <Mail className="h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

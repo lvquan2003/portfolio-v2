@@ -6,32 +6,19 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Company",
-    period: "2022 - Present",
-    description: "Led development of scalable web applications using React, Node.js, and cloud technologies.",
-    achievements: [
-      "Architected and developed 5+ high-traffic web applications serving 100K+ users",
-      "Reduced application load time by 40% through performance optimization",
-      "Mentored 3 junior developers and established code review processes",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
+    title: "Frontend Developer (Fresher)",
+    company: "BEQ HOLDINGS",
+    period: "12/2024 - 08/2025",
+    description: "Starting as an intern and transitioning to a full-time role, contributed to developing dynamic and responsive user interfaces using JavaScript, TypeScript, Next.js, and React.js.",
+    responsibilities: [
+      "Built, edited, and fixed UI components to align with design specifications.",
+      "Fetched and displayed data through RESTful API integration, ensuring seamless data flow.",
+      "Implemented front-end logic to enhance user interactions and functionality.",
+      "Created data visualizations, such as charts, to present information clearly and effectively.",
+      "Collaborated with backend teams to integrate APIs and ensure smooth functionality.",
     ],
-    technologies: ["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "Docker", "Kubernetes"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency",
-    period: "2020 - 2022",
-    description:
-      "Built responsive web applications and collaborated with design teams to create engaging user experiences.",
-    achievements: [
-      "Developed 15+ responsive websites with 99% cross-browser compatibility",
-      "Collaborated with UX/UI designers to implement pixel-perfect designs",
-      "Improved website performance scores by 35% using modern optimization techniques",
-      "Led frontend architecture decisions for client projects worth $500K+",
-    ],
-    technologies: ["React", "Vue.js", "Tailwind CSS", "JavaScript", "SASS", "Webpack"],
-  },
+    technologies: ["JavaScript", "TypeScript", "Next.js", "React.js", "Node.js", "PostgreSQL", "MongoDB", "Payload CMS", "TailwindCSS"],
+  }
 ]
 
 export function ExperienceSection() {
@@ -64,7 +51,7 @@ export function ExperienceSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Work Experience</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and the technologies I&apos;ve worked with
+            My early career steps and the technologies I&apos;m mastering
           </p>
         </div>
 
@@ -93,12 +80,12 @@ export function ExperienceSection() {
                   <p className="text-muted-foreground">{exp.description}</p>
 
                   <div className="space-y-3">
-                    <h4 className="font-semibold text-foreground">Key Achievements:</h4>
+                    <h4 className="font-semibold text-foreground">Key Responsibilities:</h4>
                     <ul className="space-y-2">
-                      {exp.achievements.map((achievement, i) => (
+                      {exp.responsibilities.map((responsibility, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                           <span className="text-primary mt-1">•</span>
-                          <span>{achievement}</span>
+                          <span>{responsibility}</span>
                         </li>
                       ))}
                     </ul>

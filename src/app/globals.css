@@ -496,6 +496,25 @@
   border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
+.tech-material {
+  background: linear-gradient(135deg, #007fff 0%, #0059b2 100%);
+  color: #ffffff;
+  border: 1px solid rgba(0, 127, 255, 0.3);
+}
+
+.tech-express {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: #ffffff;
+  border: 1px solid rgba(74, 85, 104, 0.3);
+}
+
+.tech-dnd {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  color: #1a202c;
+  border: 1px solid rgba(255, 152, 0, 0.3);
+}
+
+
 .tech-default {
   background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
   color: #ffffff;
@@ -1237,6 +1256,24 @@
   background-color: oklch(0.2 0.12 180);
   color: oklch(0.95 0.18 180);
   border-color: oklch(0.35 0.15 180);
+}
+
+.dark .tech-material {
+  background-color: oklch(0.25 0.12 250);  /* xanh lam */
+  color: oklch(0.95 0.18 250);
+  border-color: oklch(0.35 0.15 250);
+}
+
+.dark .tech-express {
+  background-color: oklch(0.15 0 0);       /* xám/đen */
+  color: oklch(0.98 0 0);
+  border-color: oklch(0.35 0 0);
+}
+
+.dark .tech-dnd {
+  background-color: oklch(0.25 0.15 40);   /* cam */
+  color: oklch(0.95 0.18 40);
+  border-color: oklch(0.35 0.12 40);
 }
 
 /* Dark mode for snake loading animation */
